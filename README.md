@@ -66,3 +66,55 @@ Used-Car-Price-Prediction/
 └── insights_summary.md
 
 └── README.md
+
+
+---
+
+##  Dataset Summary
+
+- **Source:** CarDekho used-car dataset  
+- **Total records:** 4,340 → **3,577 after removing duplicates**  
+- Key features:
+  - `car_age` (derived from year)
+  - `km_driven`
+  - `fuel`, `seller_type`, `transmission`
+  - `owner`
+  - `selling_price` (target)
+
+---
+
+##  EDA Highlights
+
+- Prices are right-skewed; most cars fall under ₹10 lakh  
+- Newer cars have significantly higher resale value  
+- Automatic cars sell for more than manual  
+- Higher mileage reduces price (negative correlation)  
+- Diesel & petrol dominate the higher price bands  
+
+---
+
+##  Modelling Overview
+
+Two models were evaluated:
+
+| Model | R² | MAE | RMSE |
+|-------|----|------|------|
+| Linear Regression | 0.32 | 2.21L | 4.9L |
+| **Random Forest (Final)** | **0.45** | **1.94L** | **4.2L** |
+
+**Most important predictors:**  
+- Car age  
+- Kilometres driven  
+- Transmission  
+- Fuel type  
+
+---
+
+##  Business Value
+
+- **Buyers:** Estimate fair value before negotiation  
+- **Dealers:** Identify mispriced vehicles and optimize stock  
+- **Platforms (Cars24/OLX):** Enable AI-based dynamic pricing  
+
+This project shows complete ML workflow skills — from raw data to deploy-ready insights.
+
