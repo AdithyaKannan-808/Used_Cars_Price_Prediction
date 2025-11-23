@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestRegressor
 import joblib
 
 # Load processed data
-df = pd.read_csv("data/processed/Cleaned_car.csv")
+df = pd.read_csv("data/processed/Cleaned_Car.csv")
 
 # Features and target
 X = df.drop("selling_price", axis=1)
