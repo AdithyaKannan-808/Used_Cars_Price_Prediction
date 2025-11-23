@@ -5,7 +5,7 @@ import joblib
 model = joblib.load("outputs/model.pkl")
 
 # Load test data
-test = pd.read_csv("data/processed/test_data.csv")
+test = pd.read_csv("outputs/test_predictions.csv")
 
 # Make predictions
 preds = model.predict(test)
