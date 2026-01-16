@@ -73,7 +73,7 @@ Used-Car-Price-Prediction/
 ##  Dataset Summary
 
 - **Source:** CarDekho used-car dataset  
-- **Total records:** 4,340 → **3,577 after removing duplicates**  
+- **Total records:** 8,640 → **8,577 after removing duplicates**  
 - Key features:
   - `car_age` (derived from year)
   - `km_driven`
